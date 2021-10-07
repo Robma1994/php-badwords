@@ -17,8 +17,12 @@
 <!-- 4.Stampare di nuovo il paragrafo e la sua lunghezza, dopo aver sostituito con tre asterischi (***) 
 tutte le occorrenze della parola da censurare. -->
 
-<h2>
+<p>
     <?php 
         echo str_replace($keyWord,'***',$text);
     ?>
-</h2>
+</p>
+<p> Lunghezza paragrafo: 
+    <?php echo strlen(str_replace($keyWord,'***',$text))?>
+    lettere
+</p>
